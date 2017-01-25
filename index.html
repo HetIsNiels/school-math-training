@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sqool Rekenen</title>
+
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+
+	<link rel="stylesheet" href="assets/css/rekenen.css" />
+	<script type="text/javascript" src="assets/js/rekenen.js"></script>
+</head>
+<body>
+	<div class="screen method">
+		<header id="header" data-action="resetTable;closeTask;setTask;startTask;toggleButtons" data-task="welcome" data-condition="taskIsNot" data-condition-task="welcome">
+			<h1>Sqool</h1>
+			<h2>Want sqool is cool.</h2>
+		</header>
+		<div id="buttons">
+			<div class="method clickable" data-action="closeTask;setTask;setTitleChild;toggleButtons;selectTables" data-task="train" data-condition="taskIs" data-condition-task="welcome">
+				<div class="title inactive train">OEFENEN</div>
+			</div>
+			<div class="method clickable" data-action="closeTask;setTask;setTitleChild;toggleButtons;selectTables" data-task="quiz" data-condition="taskIs" data-condition-task="welcome">
+				<div class="title inactive right quiz">QUIZ</div>
+			</div>
+			<div class="method clickable" data-action="closeTask;setTask;setTitleChild;toggleButtons;startTask" data-task="contact" data-condition="taskIs" data-condition-task="welcome">
+				<div class="title inactive contact">CONTACT</div>
+			</div>
+		</div>
+		<div class="view shown" id="task-welcome">
+            <video id="welcome_vid" poster="assets/img/transp.png" preload="auto" autoplay="autoplay">
+				<source src="assets/vid/tables.wmv" />
+				<source src="assets/vid/tables.mp4" />
+            </video>
+		</div>
+		<div class="view" id="table-selection">
+			<h1>Welke tafel wil je gebruiken?</h1>
+		</div>
+		<div class="view" id="task-train"></div>
+		<div class="view" id="task-quiz"></div>
+		<div class="view" id="task-contact">
+			<h1>Contact opnemen</h1>
+			Contact opnemen met Sqool? Dat is cool! Op deze pagina vind je alle informatie om contact te kunnen opnemen met Sqool.<br />
+			<b>Basisschool Sqool</b><br />
+			Dorpstraat 33<br />
+			2712 AB  Zoetermeer<br />
+			<a href="//basisschoolsqool.nl">www.basisschoolsqool.nl</a><br />
+			<a href="mailto:info@basisschoolsqool.nl">info@bassischoolsqool.nl</a><br />
+			079-2233004
+		</div>
+		<footer>
+			&copy; Sqool 2015 - Gemaakt door <a href="//hetisniels.nl">Niels van Velzen</a>.
+		</footer>
+	</div>
+</body>
+</html>
